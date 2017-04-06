@@ -1,0 +1,51 @@
+body {
+		font-family: 'Comfortaa', cursive;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		font-size: 20pt;
+	}
+input {
+		font-family: 'Comfortaa', cursive;
+		outline: none;
+		padding: 10px;
+		display: block;
+		width: 300px;
+		border-radius: 4px;
+		border: 2px solid #eee;
+		margin: 20px auto;
+	}
+input[type="submit"] {
+		font-family: 'Comfortaa', cursive;
+		padding: 10px;
+		color: #fff;
+		border-radius: 4px;
+		background: #0098cb;
+		width: 320px;
+		border: 0px;
+		margin: 20px auto;
+		margin-top: 0px;
+		cursor: pointer;
+	}
+input[type="submit"]:hover {
+		background: #00b8eb;
+	}
+input:focus {
+    		border-radius: 4px;
+    		padding: 12px 20px;
+    		border: 2px solid #00b8eb;
+    		font-weight: bold;
+    		font-size: 0.6em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        	}
+.header {
+		border: 2px;
+		padding: 20px 0px;
+		border-style: none;
+		width: 100%;
+		text-align: center;
+	}
+.header a {
+		color: #333;
+		text-decoration: none;
+	}
