@@ -130,3 +130,21 @@ function appear15(){
 function appear16(){
     document.getElementById('appear').innerHTML="eBasta Scheme is very much similar to the concept of DigiLockers.  eBasta provides an online learning space for the students in the form of digital books.  With this service, students would no more have to go and buy their books from the book shops and neither would publishers need to worry about pirated versions or supply channel flaws.The content and curriculum of the students can be decided by the school and its teachers and students will have to just login and download their study material, which they can use for learning at their computers and tablets.  This kind of initiative would initiate the era of interactive learning in India.";
 }
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}

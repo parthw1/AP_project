@@ -1,84 +1,183 @@
-/* Colours
---------------------------------------------------------------------------------------------------------------- */
-body{color:black;
-    background-color:white;
-    margin-bottom: 0px;}
+body{
+ 
+    font-family: 'Lora', serif;
 
-a{color:black;}
+    font-family: 'Crimson Text', serif;
 
+    font-family: 'Source Serif Pro', serif;
 
-/* Top Bar
---------------------------------------------------------------------------------------------------------------- */
-#topbar{padding:10px 0 0 0; text-align:right; font-size:.8em;}
+    font-family: 'Noto Sans', sans-serif;
 
-#topbar li{display:inline; margin-right:3px; padding-right:8px; border-right:1px solid;}
-#topbar li:last-child{margin-right:0; padding-right:0; border:none;}
-#topbar li{border-color:#FFFFFF;}
-/* Top Bar */
-#topbar li{border-color:#FFFFFF;}
-/*Top Bar
-/* Top Bar
---------------------------------------------------------------------------------------------------------------- */
-
-
-/* Header
---------------------------------------------------------------------------------------------------------------- */
-#emblem{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
 }
+
+
 #mainhead{
     font-size: 60px;
     color: blue;
-    font-weight: 800px;
     text-transform:uppercase;
+    
+    font-family: 'Bree Serif', serif;
+
+    font-family: 'Abril Fatface', cursive;
+ 
 }
-/*Header--------------------------------------------------------------------------------------------------------------*/
+.navigbar{
+    background-color:grey;
+    text-transform: uppercase;
+    margin: 10 px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+@media (min-width: 768px){
+   .navbar .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        background-color:orange;
+    text-transform: uppercase;
+    border-radius: 10px;
+        color:black;
+     
+   
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Noto Serif', serif;
+
+
+
+    }
+  
+}
+.nav.navbar-nav.navbar-right li{
+    color: black;
+}
+
+.hd{
+    font-family: 'Merriweather', serif;
+    font-family: 'Noto Serif', serif;
+    color:darkred;
+    font-weight: 500;
+    
+}
+
 #marq{
     background-color:aqua;
-    padding: 10px 10px;
+    padding: 0px 0px;
     color:firebrick;
-}
-/* Rows
---------------------------------------------------------------------------------------------------------------- */
 
-/*Navigation Bar--------------------------------------------------------------------------------*/
-.clear {
-    list-style-position: inside;
-    list-style-type: none;
-    margin: 75;
-    padding-left: 55px ;
-    overflow: hidden;
-    background-color: orange;
-    background-size: contain;
-    text-transform: uppercase;
-    font-size: 17px;
-    top: -2000px;
-    bottom: 200px;
-    border-radius: 10px;
-    position: -800px;
+
 }
 
-#navbarli {
-    float: left;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: white;  /*Sets the text hover color on navbar*/
 }
 
-#navbarli a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px 16px;
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: darkgrey;
+}
+
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: #262626;
+   text-decoration: none;
+  background-color: #66CCFF;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
     text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: black; /*Change active text color here*/
+    }
+
+
+.panel-body{
+    font-size: 15px;
+}
+.panel-group{
+    color:black;
+    border:2px ridge green;
+    border-radius: 5px;
+   }
+.panel-heading{
+    font-size: 17px;
+}
+#info{
+    
+    position:inherit;
+    padding: 20px;
+    border: solid darkblue;
+    border-width: 2px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    
+}
+#iiitn_logo{
+    height: 125px ;
+    width: 120px ;
+    padding: 20px;
+    margin-left: 50px ;
+    margin-top: 10px;
+}
+#mir_lab_logo{
+    height: 125px ;
+    width: 120px ;
+    padding: 20px;
+    margin-left: 50px ;
+    margin-top: -10px;
 }
 
-#navbarli a:hover{
+#iiitname{
+    text-align: center;
+    padding: 55px;
+    font-size: 30px;
+}
+#iiitlogo{
+    text-align: center;
+    padding: 85px;
+    padding-top: 15px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+footer {
+    padding: 2em;
+    color: black;
     background-color: gray;
+    clear:none;
+    text-align: center;
+    font-size:15px;
+    margin: 10px;
 }
 
-.active {
-background-color:black;
-}
 
 
 /*Slider----------------------------------------------------------------------------------------------------*/
@@ -113,84 +212,3 @@ html,body {
 	opacity: 1;
 }
 /*Slider--------------------------------------------------------------------------------------------------------*/	
-
-/*Vertical Menu--------------------------------------------------------------------------------*/
-.vertical-menu {
-    width: 250px; /* Set a width if you like */
-}
-
-.vertical-menu a {
-    background-color: white; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 5px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.vertical-menu a.active {
-    background-color: white; /* Add a green color to the "active/current" link */
-    color: black;
-
-}
-/*----------------------------------------------------------------------------------------------*/
-#info{
-    width: 850px;
-    position: relative;
-    left:300px;
-    top:-555px;
-    border: solid darkblue;
-    border-bottom-width: medium;
-    height: 550px;
-    border-radius: 10px;
-    color: black;
-    font-size: 20px;
-    
-}
-#bold{
-    font-size: 50px;
-    top: -200px;
-}
-fieldset { border:3px ridge green;border-radius: 7px;
-}
-
-legend {
-  padding: 0.2em 0.5em;
-  border:1px solid green;
-  color:firebrick;
-  font-size:90%;
-  text-align:center;
-  }
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-
-
-/*-----------------------------------------------------------------------------------------*/
-/*Copyright---------------------------------------------------------------------------------*/
-#copyright{text-align:center;}
-	#copyright p:first-of-type{margin-bottom:10px;}
-/* Copyright
---------------------------------------------------------------------------------------------------------------- */
-#copyright{position: relative;
-            top: 00px;}
-#copyright p{margin:-200; padding:10px,10px;}
-
